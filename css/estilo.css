@@ -1,12 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+body{
+    background-image: url("../img/fundo.jpg");
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
 :root{
     --primary: #3F8A9B;
     --secundary: #59A6BE;
     --black: #000;
     --white: #FFF;
 }
+
 /* Cabeçalho */
 header{
-    border-bottom: 0.4rem solid #3F8A9B;
+    background-color: #3F8A9B;
     display: flex;
-    height: 6rem
+    height: 5rem;
+}
+header picture{
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+}
+header picture img{
+    height: 140%;
+}
+/* Navegação */
+header nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: right;
+}
+header nav ul li{
+    padding: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
 }
