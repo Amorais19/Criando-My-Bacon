@@ -1,0 +1,12 @@
+:root{
+    --primary: #3F8A9B;
+    --secundary: #59A6BE;
+    --black: #000;
+    --white: #FFF;
+}
+/* Cabeçalho */
+header{
+    border-bottom: 0.4rem solid #3F8A9B;
+    display: flex;
+    height: 6rem
+}
