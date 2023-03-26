@@ -45,5 +45,15 @@ header nav ul li{
 }
 header nav ul li a{
     text-decoration: none;
-    color: #000;
+    color: #FFF;
+}
+/* Principal */
+main{
+    min-height: calc(100vh-9rem);
+}
+main section{
+    display: flex;
+    max-width: 1090px;
+    margin: 100px 0px 0px 620px;
+
 }
