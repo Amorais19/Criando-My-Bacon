@@ -33,7 +33,7 @@ header picture img{
 main div{
     text-align: center;
 }
-main nav ul li a{
+main nav ul a{
     text-align: center;
     text-decoration: none;
     color: #714ec3;
@@ -41,13 +41,22 @@ main nav ul li a{
 /* Principal */
 main section{
     display: flex;
-    max-width: 1090px;
-    margin: 100px 0px 0px 620px;
+    justify-content: center;
+    padding-top: 3%;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 9rem);
 }
 /* Rodapé */
 footer{
     background-color: #3F8A9B;
     height: 3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 footer img{
     height: 100%;
