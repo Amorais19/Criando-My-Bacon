@@ -33,22 +33,84 @@ header picture img{
 main div{
     text-align: center;
 }
-main nav ul a{
+main nav h2{
+    margin-top: 0.8rem;
+}
+main nav h2 a{
     text-align: center;
     text-decoration: none;
     color: #714ec3;
 }
 /* Principal */
-main section{
+main.inicial section{
     display: flex;
     justify-content: center;
     padding-top: 3%;
 }
 main{
+    height: calc(100vh - 9rem);
+}
+main.inicial{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 9rem);
+}
+/* Rodapé */
+footer{
+    background-color: #3F8A9B;
+    height: 3rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer img{
+    height: 100%;
+    padding: 0.4rem;
+}
+/* Explorar */
+/* Cabeçalho */
+header{
+    background-color: #3F8A9B;
+    display: flex;
+    height: 5rem;
+}
+header picture{
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+}
+header picture img{
+    height: 140%;
+}
+/* Principal */
+main.explorar nav{
+    width: 100%;
+}
+main.explorar nav section{
+    display: flex;
+    flex-direction: row;
+}
+main.explorar nav input[id="home"]:checked ~  section.home{
+    display: block;
+}
+main.explorar nav input[id="home"]:checked ~  section.myday{
+    display: none;
+}
+main.explorar nav input[id="myday"]:checked ~  section.myday{
+    display: block;
+}
+main.explorar nav input[id="myday"]:checked ~  section.home{
+    display: none;
+}
+main.explorar nav label{
+    cursor: pointer;
+}
+main.explorar nav input{
+    display: none;
+}
+main.explorar nav{
+    display: grid;
+    justify-content: center;
+    padding-top: 10%;
 }
 /* Rodapé */
 footer{
