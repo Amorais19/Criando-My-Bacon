@@ -78,14 +78,6 @@ footer img{
 header{
     background-color: var(--primary);
     display: flex;
-    height: 5rem;
-}
-header picture{
-    margin-left: 0.5rem;
-    padding: 0.5rem;
-}
-header picture img{
-    height: 140%;
 }
 /* Principal */
 main.explorar nav section{
@@ -96,15 +88,14 @@ main.explorar nav section{
     width: 100%;
 }
 main.explorar nav section.home aside{
-    margin: 1.5rem 0 0 5rem;
+    margin: 1.5rem 0 0 3rem;
 }
 main.explorar nav section.myday aside{
-    margin: 1.5rem 0 0 5rem;
+    margin: 1.5rem 0 0 3rem;
 }
 main.explorar nav section.myday aside img{
     margin: 1rem;
 }
-
 main.explorar nav{
     width: 100%;
 }
@@ -112,16 +103,16 @@ main.explorar nav section{
     display: flex;
     flex-direction: row;
 }
-main.explorar nav input[id="home"]:checked ~  section.home{
+main.explorar nav input[id="home"]:checked ~ section.home{
     display: block;
 }
-main.explorar nav input[id="home"]:checked ~  section.myday{
+main.explorar nav input[id="home"]:checked ~ section.myday{
     display: none;
 }
-main.explorar nav input[id="myday"]:checked ~  section.myday{
+main.explorar nav input[id="myday"]:checked ~ section.myday{
     display: block;
 }
-main.explorar nav input[id="myday"]:checked ~  section.home{
+main.explorar nav input[id="myday"]:checked ~ section.home{
     display: none;
 }
 main.explorar nav label{
@@ -131,19 +122,16 @@ main.explorar nav input{
     display: none;
 }
 main.explorar nav{
-    display: grid;
-    justify-content: center;
-    padding-top: 10%;
+    display: flex;
+    padding-top: 180px;
 }
-/* Rodapé */
-footer{
+main.explorar nav section.home aside img{
+    margin-right: 5rem;
+}
+main.explorar nav h2{
+    margin-left: 1rem;
     background-color: var(--primary);
-    height: 3rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
-footer img{
-    height: 100%;
-    padding: 0.4rem;
+main.explorar nav label{
+    margin: 1rem;
 }
