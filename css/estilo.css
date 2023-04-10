@@ -201,14 +201,15 @@ main.explorar nav input{
 }
 main.explorar nav{
     display: flex;
-    padding-top: 180px;
+    padding-top: 420px;
 }
 main.explorar nav section.home aside img{
     margin-right: 5rem;
 }
 main.explorar nav h2{
-    margin-left: 1rem;
     background-color: var(--primary);
+    height: 300px;
+    width: 235px;
 }
 main.explorar nav label{
     margin: 1rem;
