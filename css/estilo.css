@@ -15,21 +15,22 @@ body{
 :root{
     --primary: #3F8A9B;
     --secundary: #59A6BE;
+    --tertiary: #3f8a9bca;
     --escritaexplorar: #714ec3;
     --black: #000;
     --white: #FFF;
 }
-/* Cabeçalho */
+/* Cabeçalho Index */
 header{
     background-color: var(--escritaexplorar);
     display: flex;
     height: 5rem;
 }
-header picture{
+header picture.logo{
     margin-left: 0.5rem;
     padding: 0.5rem;
 }
-header picture img{
+header picture.logo img{
     height: 140%;
 }
 /* Navegação */
@@ -73,11 +74,88 @@ footer img{
     height: 100%;
     padding: 0.4rem;
 }
-/* Explorar */
-/* Cabeçalho */
+/* Cabeçalho Home */
 header{
     background-color: var(--primary);
     display: flex;
+}
+header picture.logo-home{
+    margin-left: 2.5rem;
+    padding: 0.5rem;
+}
+header picture.logo-home img{
+    height: 140%;
+}
+/* Menu */
+header nav.menu{
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
+}
+header nav.menu input.menu-faketrigger{
+    position: absolute;
+    z-index: 1000;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
+}
+header nav.menu div.menu-lines{
+    position: absolute;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+}
+header nav.menu input.menu-faketrigger:checked~ul{
+    background-color: var(--tertiary);
+}
+header nav.menu div.menu-lines span{
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: var(--black);
+    border-radius: 3px;
+    transition: all ease .2s;
+}
+header nav.menu input.menu-faketrigger:checked~div.menu-lines span{
+    background-color: var(--black);
+}
+header nav.menu input.menu-faketrigger:checked~div.menu-lines span:nth-child(1){
+    transform-origin: 0% 0%;
+    transform: rotate(45deg) scaleX(1.25);
+}
+header nav.menu input.menu-faketrigger:checked~div.menu-lines span:nth-child(2){
+    opacity: 0;
+}
+header nav.menu input.menu-faketrigger:checked~div.menu-lines span:nth-child(3){
+    transform-origin: 0% 100%;
+    transform: rotate(-45deg) scaleX(1.25);
+}
+header nav.menu ul{
+    position: absolute;
+    z-index: 998;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: calc(51vh - 100px); 
+    padding-top: 100px;
+    background-color: var(--black);
+    margin-left: -300px;
+    transition: all ease .2s;
+}
+header nav.menu input.menu-faketrigger:checked~ul{
+    margin-left: 0;
+}
+header nav.menu ul li{
+    padding: 10px 3px;
+}
+header nav.menu ul li a{
+    text-decoration: none;
+    color: var(--black);
+    font-size: 20px;
+}
+header nav.menu ul li a:hover{
+    color: var(--white);
 }
 /* Principal */
 main.explorar nav section{
@@ -135,3 +213,4 @@ main.explorar nav h2{
 main.explorar nav label{
     margin: 1rem;
 }
+/* Rodapé é o mesmo do de cima */
