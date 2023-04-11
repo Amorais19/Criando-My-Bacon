@@ -178,6 +178,7 @@ main.explorar nav{
     width: 100%;
 }
 main.explorar nav section{
+    overflow: auto;
     display: flex;
     flex-direction: row;
 }
@@ -201,15 +202,15 @@ main.explorar nav input{
 }
 main.explorar nav{
     display: flex;
-    padding-top: 420px;
+    padding-top: 182px;
 }
 main.explorar nav section.home aside img{
     margin-right: 5rem;
 }
 main.explorar nav h2{
-    background-color: var(--primary);
-    height: 300px;
-    width: 235px;
+    background-color: var(--secundary);
+    border: 5px solid var(--secundary);
+    border-top-right-radius: 12px;
 }
 main.explorar nav label{
     margin: 1rem;

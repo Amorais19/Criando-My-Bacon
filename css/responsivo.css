@@ -1,4 +1,4 @@
-@media (max-width: 1010px){
+@media (max-width: 1440px){
     main>section.home{
         grid-template-columns: auto auto;
     }
@@ -6,21 +6,20 @@
         grid-template-columns: auto auto auto;
     }
 }
-/*@media (max-width: 768px){
-    header{
-        height: 4.5rem;
-    }
+@media (max-width: 1010px){
     main>section.home{
         grid-template-columns: auto auto;
     }
     main>section.myday{
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
     }
-    main>section{
-        font-size: 0.9rem;
+}
+@media (max-width: 768px){
+    main>section.home{
+        grid-template-columns: auto auto;
     }
-    footer{
-        height: 2.5rem;
+    main>section.myday{
+        grid-template-columns: auto auto;
     }
 }
 @media (max-width: 500px){
@@ -30,4 +29,4 @@
     main>section.myday{
         grid-template-columns: auto;
     }
-}*/
+}
